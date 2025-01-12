@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 import numpy as np
 import pickle
 from sklearn.linear_model import LogisticRegression
-import nltk
 import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
