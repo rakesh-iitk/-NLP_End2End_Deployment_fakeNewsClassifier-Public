@@ -1,5 +1,5 @@
 # Fake News Classifier
-* Deployed at: [real-time-fake-news-classifier](https://fake-news-classifier-vxfp.onrender.com/)
+* Deployed at: [real-time-fake-news-classifier](https://fake-news-classifier-yhp3.onrender.com)
 
 
 ## Project Overview
