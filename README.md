@@ -47,8 +47,11 @@ A machine learning web application designed to detect fake news using advanced n
 
 ### Installation
 - Bash Script:
+  
 git clone https://github.com/rakesh-iitk/NLP_End2End_Deployment_fakeNewsClassifier
+
 pip install -r requirements.txt
+
 python app.py
 
 ### Contact
