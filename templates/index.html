@@ -11,12 +11,19 @@
             <textarea name="news" rows="4" placeholder="Enter news article"></textarea>
             <input type="submit" value="Predict">
             
+            <p style="margin-top: 10px; font-size: 0.9em; color: rgb(241, 4, 4);">
+                (Give the news article or sentences at least greater than 4 sentences to get accurate results. 1 or 2 lines may be prone to error.)
+            </p>
+
             {% if prediction_text %}
             <div class="result">
                 <p>{{ prediction_text }}</p>
             </div>
             {% endif %}
         </form>
+        <footer style="margin-top: 20px; font-size: 0.8em; text-align: center; color: gray;">
+            Made by @Rakesh Kumar from IITK
+        </footer>
     </div>
 </body>
 </html>

@@ -9,6 +9,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
+import socket
 
 app = Flask(__name__)
 
@@ -47,5 +48,11 @@ def predict():
     result = "Fake News" if prediction == 1 else "Real News"
     return render_template('index.html', prediction_text=f'This is: {result}')
 
+# host = 0 0 0 0 for running docker
+hostname = socket.gethostname()
+local_ip = socket.gethostbyname(hostname)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host=local_ip, port=5000, debug=False)
+
+
